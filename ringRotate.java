@@ -12,12 +12,16 @@ public class ringRotate {
 
     }
     
+    public static void rr(int [][] A) {
+        
+    }
     public static void main(String[] args) {
 
         int n1 = scn.nextInt();
         int m1 = scn.nextInt();
         int[][] A = new int[n1][m1];
         takeInput(A);
+        rr(A);
 
     }
     
