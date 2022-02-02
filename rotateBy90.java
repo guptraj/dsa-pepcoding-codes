@@ -7,7 +7,7 @@ public class rotateBy90 {
         for (int i = 0; i < A.length; i++) {
             for (int j = 0; j < A[0].length; j++) {
                 System.out.print(A[i][j] + " ");
-                
+
             }
             System.out.println();
         }
@@ -23,12 +23,10 @@ public class rotateBy90 {
     }
 
     public static void reverse(int[][] a) {
-        for(int i=0;i<a.length; i++)
-        {
-            int x= 0;
-            int y=a[0].length-1;
-            while(x<y)
-            {
+        for (int i = 0; i < a.length; i++) {
+            int x = 0;
+            int y = a[0].length - 1;
+            while (x < y) {
                 int temp = a[i][x];
                 a[i][x] = a[i][y];
                 a[i][y] = temp;
@@ -37,14 +35,12 @@ public class rotateBy90 {
 
             }
         }
-        
+
     }
 
     public static void rbn(int[][] a) {
 
         int n = a.length;
-        int m = a[0].length;
-
         for (int i = 0; i < n; i++) {
 
             for (int j = 0; j < i; j++) {
