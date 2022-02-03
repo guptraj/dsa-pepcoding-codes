@@ -11,14 +11,34 @@ public class saddlePoint {
         }
 
     }
-    
-    public static void main(String[] args) {
 
-        int n1 = scn.nextInt();
-        int m1 = scn.nextInt();
-        int[][] A = new int[n1][m1];
-        takeInput(A);
+    public static void saddlepoint(int[][] A) {
+
+        int n = A.length;
+
+        for (int j = 0; j < n; j++) {
+            int x = j;
+            int i = 0;
+
+            while(i<n && x<n)
+            {
+                System.out.println(A[i][x]);
+                
+                i++;
+                x++;
+
+            }
+        }
 
     }
-    
+
+    public static void main(String[] args) {
+
+        int n = scn.nextInt();
+        int[][] A = new int[n][n];
+        takeInput(A);
+        saddlepoint(A);
+
+    }
+
 }
